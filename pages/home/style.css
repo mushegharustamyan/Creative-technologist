@@ -25,19 +25,15 @@
     justify-content: space-between;
 }
 
-
-
-bode{
-    width:100vw;
-}
-
 .header {
     width: 100%; /*1152*/
     height: 83px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 169px;
+    background-color: #fff;
+    position: fixed;
+    margin-top: -243px;
 }
 
 .burger_menu{
@@ -72,8 +68,10 @@ bode{
 }
 
 .welcome_section{
+    margin-top: 243px;
     width: 100%;
     height: 311px;
+    margin-bottom: 74px;
 }
 
 .welcome_section_wrapper{
@@ -122,8 +120,8 @@ bode{
 }
 
 .profile_photo{
-    width: 20vw;
-    height: 20vw;
+    width: 243px;
+    height: 243px;
     border-radius: 50%;
     background-image: url(../../img/profile_photo.png);
     background-repeat: no-repeat;
@@ -131,16 +129,136 @@ bode{
     background-position: center;
 }
 
+.recents_posts_section{
+    width: 100%;
+    height: 396px;
+    background-color: #EDF7FA;
+}
+
+.recents_posts_wrapper{
+    width: 74%;
+    height: 357px;
+    flex-direction: column;
+}
+
+.recents_head{
+    width: 100%;
+}
+
+.recents_head a{
+    color: #00A8CC;
+}
+
+.recents{
+    width: 100%;
+    height: 295px;
+}
+
+.recent{
+    padding: 24px;
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.recent_head{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #21243D ;
+}
+
+.recent :nth-child(3){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #21243D;
+}
+
+.data_and_type p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.data_and_type {
+    width: 278px;
+}
+
+.line{
+    width: 1px;
+    height: 100%;
+    background-color: #21243D;
+}
 
 
 
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:1180px) {
+    .header{
+        margin-bottom: 120px;
+    }
+
+    .welcome_section {
+        height: 450px;
+    }
+
+    .welcome_section_wrapper{
+        height: 450px;
+    }
+
+    .recents_posts_section{
+        height: 700px;
+    }
+
+    .recents_posts_wrapper{
+        width: 94%;
+        height: 670px;
+    }
+
+    .data_and_type {
+        width: 250px;
+    }
+
+    .recents{
+        width: 100%;
+        height: 675px;
+        flex-direction: column;
+    }
+
+    .recent {
+        width: 80%;
+        height: 280px;
+    }
+
+    .recents_head{
+        width: auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recents_head a{
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-width:680px) {
     .blur{
         filter:blur(8px);
     }
 
     .header{
-        margin-bottom: 33px;
+        background-color: none;
+        margin-top: -120px;
+        z-index: 120;
     }
 
     .burger_menu {
@@ -166,6 +284,8 @@ bode{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        position: relative;
+        z-index: 101;
     }
 
     .resp_ul a{
@@ -178,6 +298,7 @@ bode{
     }
 
     .welcome_section {
+        margin-top: 120px;
         height: 525px;
     }
 
@@ -212,4 +333,43 @@ bode{
         text-align: center;
     }
 
+    .recents_posts_section{
+        height: 647px;
+    }
+
+    .recents_posts_wrapper{
+        width: 94%;
+        height: 600px;
+    }
+
+    .recents{
+        height: 549px;
+    }
+
+    .recent{
+        width: 100%;
+        height: 266px;
+    }
+
+    .recent_head{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .recent :nth-child(3){
+        font-size: 12px;
+    }
+
+    .data_and_type {
+        width: 246px;
+    }
+
+    .data_and_type p{
+        font-size: 12px;
+    }
+
+    .data_and_type :nth-child(3) {
+        font-size: 12px;
+    }
 }
